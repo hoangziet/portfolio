@@ -1,0 +1,125 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* home */
+#home {
+    background-color: blue;
+    display: flex; /* flex box for nav in the same row */
+    justify-content: space-between; /* put name and nav far away */
+    align-items: center;
+    padding: 20px;
+    color: white;
+    /* position: fixed; */
+}
+
+.profile-name {
+    font-size: 20px;
+}
+
+
+.topmenu {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.topmenu:hover {
+    background-color: lightblue;
+}
+
+/* about */
+#about {
+    display: flex;
+    padding: 20px;
+    background-color: #ccc;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #fff 4px solid;
+}
+
+.about-content p {
+    max-width: 800px;
+}
+
+.about-content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-content h2 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+.contact a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.contact .github {
+    background-color: rgb(24, 23, 23);
+}
+
+.contact .github:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(24, 23, 23, 0.2);
+}
+
+.contact .linkedin {
+    background-color: rgb(10, 102, 194) ;
+}
+
+.contact .linkedin:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(10, 102, 194, 0.2);
+}
+
+.contact .email {
+    background-color: rgb(234, 67, 53);
+}
+
+.contact .email:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(234, 67, 53, 0.2);
+}
+
+/* skills */
+#skills {
+    background-color: violet;
+}
+
+/* projects */
+#projects {
+    background-color: wheat;
+}
+
+/* achive-cert */
+#achive-cert {
+    background-color: darkmagenta;
+}
+
+
+
+
