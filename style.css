@@ -5,7 +5,7 @@
 
 /* home */
 #home {
-    background-color: blue;
+    background-color: #1E2A5E;
     display: flex; /* flex box for nav in the same row */
     justify-content: space-between; /* put name and nav far away */
     align-items: center;
@@ -34,7 +34,7 @@
 #about {
     display: flex;
     padding: 20px;
-    background-color: #ccc;
+    background-color: #7C93C3;
     align-items: center;
     justify-content: center;
     gap: 40px;
@@ -44,7 +44,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: #fff 4px solid;
+    border: #E1D7B7 4px solid;
 }
 
 .about-content p {
@@ -105,21 +105,53 @@
     box-shadow: 0 4px 8px rgba(234, 67, 53, 0.2);
 }
 
-/* skills */
-#skills {
-    background-color: violet;
-}
 
 /* projects */
 #projects {
-    background-color: wheat;
+    background-color: #55679C;
+    padding: 30px;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    display: flex;
+    gap: 50px;
+}
+
+.project-container h3 {
+    font-size: 25px;
+}
+
+.project-display {
+    border: #E1D7B7 2px solid;
+}
+
+.project-display:hover {
+    border: gold 3px solid;
+    transform: translateY(-4px); 
+    transition: transform 0.3s ease; 
+}
+
+/* skills */
+#skills {
+    background-color: black;
 }
 
 /* achive-cert */
 #achive-cert {
-    background-color: darkmagenta;
+    background-color: black;
 }
 
 
 
-
+/* 
+#7C93C3
+#55679C
+#1E2A5E
+#E1D7B7 */
