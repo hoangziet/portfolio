@@ -17,7 +17,13 @@
 .section-header {
     font-size: 50px;
     text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.section-header i {
+    font-size: 40px;
+    padding-right: 10px;
 }
 
 .profile-name {
@@ -41,7 +47,6 @@
     padding: 20px;
     background-color: #7C93C3;
 }
-
 
 .about-image {
     width: 200px;
@@ -167,24 +172,55 @@
     border-radius: 5px;
     padding: 5px 10px;
 }
+
+.tech-stack  li:hover {
+    background-color: #beb69b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+   transition: all 0.3s ease; 
+}
+
 .swiper-pagination {
     position: absolute;
 }
 
 
-
 /* skills */
 #skills {
-    background-color: black;
+    padding: 40px 20px;
+    background-color: #7C93C3;
 }
 
-/* achive-cert */
+.skills-table {
+    margin: 0 auto;
+}
+
+.skills-table td {
+    padding: 15px;
+    vertical-align: top;
+}
+.skills-table ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    text-wrap: wrap;
+}
+.skills-table li {
+    background-color: #E1D7B7;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.skills-table li:hover {
+    background-color: #beb69b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+   transition: all 0.3s ease; 
+}
+
 #achive-cert {
-    background-color: black;
+    background-color: #000;
 }
-
-
-
 /* 
 #7C93C3
 #55679C
