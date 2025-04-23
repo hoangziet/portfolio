@@ -1,119 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoang Viet Nguyen</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <script src="./script.js"></script>
+
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
+
 <body>
     <div id="home">
-        <div class = "profile-container">
-            <div class="profile-name">
-                Hoang Viet Nguyen
-            </div>
-            <p style="font-style: italic; font-size : 14px;">AI Engineer</p>
-
+        <div class="profile-container">
+            <div class="profile-name">Hoang Viet Nguyen</div>
+            <p style="font-style: italic; font-size: 14px">AI Engineer</p>
         </div>
-
         <!-- navigation -->
         <nav>
             <a href="#about" class="topmenu">About</a>
             <a href="#skills" class="topmenu">Skills</a>
             <a href="#projects" class="topmenu">Projects</a>
             <a href="#achive-cert" class="topmenu">Achievements</a>
-        </nav>  
+        </nav>
     </div>
-
-
-
 
     <!-- about -->
     <section id="about">
-        <img src="./assets/images/profile.jpg" class="about-image" alt="profile.jpg">
-        <div class="about-content">
-            <h1>Hoang Viet Nguyen</h1>
-            <h2>AI Engineer</h2>
-            <p>
-                A third-year AI major student with a strong passion for mathematics and algorithms. Hardworking
-                and eager to learn, I thrive on solving real-world challenges through innovative solutions. With a
-                friendly and collaborative mindset, I am always ready to expand my expertise and contribute effectively to any team
-            </p>
-            <div class="contact">
-                <a href="https://github.com/hoangziet" target="_blank" class="github">
-                    <i class="fa-brands fa-github"></i> hoangziet
-                </a>
-                <a href="https://www.linkedin.com/in/hoangziet/" target="_blank" class="linkedin">
-                    <i class="fa-brands fa-linkedin"></i> hoangziet
-                </a>    
-                <a href="mailto:hoangziet22@gmail.com" class="email">
-                    <i class="fa-solid fa-envelope"></i> hoangziet22@gmai.com
-                </a>
+        <h2 class="section-header">About</h2>
+        <div class="about-container">
+            <img src="./assets/images/profile.jpg" class="about-image" alt="profile.jpg" />
+            <div class="about-content">
+                <h1>Hoang Viet Nguyen</h1>
+                <h2>AI Engineer</h2>
+                <p>
+                    A third-year AI major student with a strong passion for
+                    mathematics and algorithms. Hardworking and eager to learn,
+                    I thrive on solving real-world challenges through innovative
+                    solutions. With a friendly and collaborative mindset, I am
+                    always ready to expand my expertise and contribute
+                    effectively to any team
+                </p>
+                <div class="contact">
+                    <a href="https://github.com/hoangziet" target="_blank" class="github">
+                        <i class="fa-brands fa-github"></i> hoangziet
+                    </a>
+                    <a href="https://www.linkedin.com/in/hoangziet/" target="_blank" class="linkedin">
+                        <i class="fa-brands fa-linkedin"></i> hoangziet
+                    </a>
+                    <a href="mailto:hoangziet22@gmail.com" class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        hoangziet22@gmai.com
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- projects -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <!-- chart insight -->
-            <div class = "project-display">
-                <h3>Chart Insight</h3>
-                <p>
-                    Focused on extracting data from bar charts and pie charts using YOLO for detection and segmentation, combined with PaddleOCR and custom algorithms to retrieve column values.
-                </p>
+        <h2 class="section-header">Projects</h2>
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="project-container">
+                        <img src="./assets/images/chart_insight.png" alt="">
+                        <div class="project-display">
+                            <h3 class="project-name">Chart Insight</h3>
+                            <h4 class="role">Role: Team Lead, AI Engineer</h4>
+                            <p class="project-description">
+                                Focused on extracting data from bar charts and pie
+                                charts using YOLO for detection and segmentation,
+                                combined with PaddleOCR and custom algorithms to
+                                retrieve column values. <a href="https://github.com/hoangziet/ChartInsight">(click here to visit)</a>
+                            </p>
+                            <ul class="tech-stack">
+                                <li>OpenCV</li>
+                                <li>YOLO</li>
+                                <li>Flask</li>
+                                <li>TensorFlow</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-container">
+                        <img src="./assets/images/sos.png" alt="">
+                        <div class="project-display">
+                            <h3 class="project-name">SOS Hand Gesture Detection System</h3>
+                            <h4 class="role">Role: Full Stack Developer</h4>
+                            <p class="project-description">
+                                Implements a real-time hand gesture detection system
+                                that can recognize the SOS signal (distress signal)
+                                in a video stream. The system utilizes Mediapipe’s
+                                hand-tracking capabilities and leverages MQTT
+                                messaging and email notifications for alerting in
+                                case of emergency. <a href="https://github.com/hoangziet/sos_handsign_detector">(click here to visit)</a>
+                            </p>
+                            <ul class="tech-stack">
+                                <li>OpenCV</li>
+                                <li>Mediapie</li>
+                                <li>MQTT</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-container">
+                        <img src="./assets/images/los.png" alt="">
+                        <div class="project-display">
+                            <h3 class="project-name">Improving LOS Regression</h3>
+                            <h4 class="role">Role: Team Lead, Data Engineer</h4>
+                            <p class="project-description">
+                                Developed a regression model to predict hospital
+                                stay duration using the MIMIC-III dataset. Optimized
+                                model performance, reducing MAE from 3.65 to 3.2 by
+                                applying Feature Engineering & Hyperparameter
+                                Tuning. <a href="https://drive.google.com/file/d/1DnL3JS7tH-31EX5GI7GYJhBiq4lARsLX/view?usp=sharing">(click here to visit)</a> 
+                            </p>
+                            <ul class="tech-stack">
+                                <li>Scikit-learn</li>
+                                <li>XGboost</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <!-- sos handsign -->
-            <div class = "project-display">
-                <h3>SOS Hand Gesture Detection System</h3>
-                <p>
-                    Implements a real-time hand gesture detection system that can recognize the SOS signal (distress
-    signal) in a video stream. The system utilizes Mediapipe’s hand-tracking capabilities and leverages
-    MQTT messaging and email notifications for alerting in case of emergency.
-                </p>
-            </div>
-    
-            <!-- mimic iii -->
-            <div class = "project-display">
-                <h3>Improving Regression for Predicting Length of Hospital Stay</h3>
-                <p>
-                    Developed a regression model to predict hospital stay duration using the MIMIC-III dataset. Optimized model performance, reducing MAE from 3.65 to 3.2 by applying Feature Engineering & Hyperparameter Tuning.
-                </p>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
-        <!-- skills -->
-        <section id="skills">
-            <h2><i class="fa-solid fa-laptop-code"></i>Skills</h2>
-            <!-- technical skill -->
+
+
+    <!-- skills -->
+    <section id="skills">
+        <h2><i class="fa-solid fa-laptop-code"></i>Skills</h2>
+        <!-- technical skill -->
+        <div>
+            Technicall skills
             <div>
-                Technicall skills
-                <div>Programming Languages: Proficient in Python, C++, and C.
-                    Artificial Intelligence: Practical experience with AI frameworks like Keras, TensorFlow, PyTorch, and Scikit-learn.
-                    
-                    Data Analysis: Skilled in data visualization and storytelling using Matplotlib, Seaborn, Power BI, and R.
-                    Web Development: Understanding core web technologies,
-    including HTML, CSS, and JavaScript
-                    Tool, OS and Platforms: Linux, Anaconda, Git, GitHub.
-                    
-                    Web Scraping: Proficient in extracting data using Python libraries such as BeautifulSoup, Selenium, and Scrapy.
-                    
-                    Database & Cloud: MySQL, SQL Server, SQLite, Azure Cloud.
-                    </div>
+                Programming Languages: Proficient in Python, C++, and C.
+                Artificial Intelligence: Practical experience with AI
+                frameworks like Keras, TensorFlow, PyTorch, and
+                Scikit-learn. Data Analysis: Skilled in data visualization
+                and storytelling using Matplotlib, Seaborn, Power BI, and R.
+                Web Development: Understanding core web technologies,
+                including HTML, CSS, and JavaScript Tool, OS and Platforms:
+                Linux, Anaconda, Git, GitHub. Web Scraping: Proficient in
+                extracting data using Python libraries such as
+                BeautifulSoup, Selenium, and Scrapy. Database & Cloud:
+                MySQL, SQL Server, SQLite, Azure Cloud.
             </div>
-    
+        </div>
+
+        <div>
+            Soft skill
             <div>
-                Soft skill 
-                <div>
-                    Soft Skills: Problem-solving & Critical Thinking, Team Collaboration, Communication, Active Listening.
-                </div>
+                Soft Skills: Problem-solving & Critical Thinking, Team
+                Collaboration, Communication, Active Listening.
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- achievement  -->
     <section id="achive-cert">
@@ -122,19 +178,31 @@
             <h3>Achievements</h3>
             <ul>
                 <li>Gold Medal in FPT JS Hackathon. (2022)</li>
-                <li>Top 10 in Olympic Math Competition (Algebra Category). (2023)</li>
+                <li>
+                    Top 10 in Olympic Math Competition (Algebra Category).
+                    (2023)
+                </li>
                 <li>Honorable student for all semesters. (2022 - Now)</li>
-                <li>Full Scholarship awarded through the FPT IQ Assessment Exam. (2021)</li>
+                <li>
+                    Full Scholarship awarded through the FPT IQ Assessment
+                    Exam. (2021)
+                </li>
             </ul>
         </div>
         <div id="certifications">
             <h3>Certifications</h3>
             <ul>
                 <li>TOEIC Listening & Reading (Score: 850). (2025)</li>
-                <li>IBM Introduction to Machine Learning Specialization (2024).</li>
-                <li>DeepLearning.AI Deep Learning Specialization (2025).</li>
+                <li>
+                    IBM Introduction to Machine Learning Specialization
+                    (2024).
+                </li>
+                <li>
+                    DeepLearning.AI Deep Learning Specialization (2025).
+                </li>
             </ul>
         </div>
     </section>
 </body>
+
 </html>

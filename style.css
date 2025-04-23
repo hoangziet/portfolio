@@ -14,6 +14,12 @@
     /* position: fixed; */
 }
 
+.section-header {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .profile-name {
     font-size: 20px;
 }
@@ -32,19 +38,23 @@
 
 /* about */
 #about {
-    display: flex;
     padding: 20px;
     background-color: #7C93C3;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
 }
+
 
 .about-image {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     border: #E1D7B7 4px solid;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
 .about-content p {
@@ -109,34 +119,59 @@
 /* projects */
 #projects {
     background-color: #55679C;
-    padding: 30px;
 }
 
-#projects h2 {
-    text-align: center;
-    font-size: 35px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+.swiper-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    max-width: 1600px;  
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .project-container {
     display: flex;
-    gap: 50px;
+    gap: 40px;
+    align-items: center;
 }
 
-.project-container h3 {
-    font-size: 25px;
+.project-container img {
+    max-height: 450px;
 }
 
-.project-display {
-    border: #E1D7B7 2px solid;
+.project-name {
+    font-size: 40px;
+    line-height: 1.5;
 }
 
-.project-display:hover {
-    border: gold 3px solid;
-    transform: translateY(-4px); 
-    transition: transform 0.3s ease; 
+.role {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ccc;
 }
+
+.project-description {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    text-wrap: wrap;
+}
+.tech-stack li {
+    background-color: #E1D7B7;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.swiper-pagination {
+    position: absolute;
+}
+
+
 
 /* skills */
 #skills {
