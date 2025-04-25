@@ -17,15 +17,18 @@
 
 <body>
     <div id="home">
-        <div class="profile-container">
-            <div class="profile-name">Hoang Viet Nguyen</div>
-            <p style="font-style: italic; font-size: 14px">AI Engineer</p>
+        <div class="profile-cv">
+            <div class="profile-container">
+                <div class="profile-name">Hoang Viet Nguyen</div>
+                <p style="font-style: italic; font-size: 14px">AI Engineer</p>
+            </div>
+            <a href="./cv.html" class = "switch-page-btn">View My Resume</a>
         </div>
         <!-- navigation -->
         <nav>
             <a href="#about" class="topmenu">About</a>
-            <a href="#skills" class="topmenu">Skills</a>
             <a href="#projects" class="topmenu">Projects</a>
+            <a href="#skills" class="topmenu">Skills</a>
             <a href="#achive-cert" class="topmenu">Achievements</a>
         </nav>
     </div>
@@ -240,36 +243,76 @@
 
     <!-- achievement  -->
     <section id="achive-cert">
-        <h2>Achievements & Certifications</h2>
-        <div id="achievenemts">
-            <h3>Achievements</h3>
-            <ul>
-                <li>Gold Medal in FPT JS Hackathon. (2022)</li>
-                <li>
-                    Top 10 in Olympic Math Competition (Algebra Category).
-                    (2023)
-                </li>
-                <li>Honorable student for all semesters. (2022 - Now)</li>
-                <li>
-                    Full Scholarship awarded through the FPT IQ Assessment
-                    Exam. (2021)
-                </li>
-            </ul>
-        </div>
-        <div id="certifications">
-            <h3>Certifications</h3>
-            <ul>
-                <li>TOEIC Listening & Reading (Score: 850). (2025)</li>
-                <li>
-                    IBM Introduction to Machine Learning Specialization
-                    (2024).
-                </li>
-                <li>
-                    DeepLearning.AI Deep Learning Specialization (2025).
-                </li>
-            </ul>
+        <h2 class = "section-header">Achievements & Certifications</h2>
+        <div class="a-c-container">
+            <table class="a-c-table">
+                <caption>Achivements</caption>
+                <tr>
+                    <td>2021</td>
+                    <td>Full Scholarship awarded through the FPT IQ Assessment Exam.</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Gold Medal in FPT JS Hackathon. </td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Top 10 in FPT Math Olympiad (Algebra Category)</td>
+                </tr>
+                <tr class = "last-row">
+                    <td>2022 - Now</td>
+                    <td>Honorable student for all semesters</td>
+                </tr>
+            </table>
+            <table class="a-c-table">
+                <caption>Certifications</caption>
+                <tr>
+                    <td>2024</td>
+                    <td>IBM Introduction to Machine Learning Specialization</td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>DeepLearning.AI Deep Learning Specialization</td>
+                </tr>
+                <tr class = "last-row">
+                    <td>2025 (Near Future)</td>
+                    <td>TOEIC Listening & Reading (Score: 850).</td>
+                </tr>
+            </table>
         </div>
     </section>
-</body>
 
+    <!-- Footer -->
+    <footer>
+        <div class="two-col">
+            <div class="footer-contact">
+                <a href="https://github.com/hoangziet" target="_blank" class="github">
+                    <i class="fa-brands fa-github"></i> hoangziet
+                </a>
+                <a href="https://www.linkedin.com/in/hoangziet/" target="_blank" class="linkedin">
+                    <i class="fa-brands fa-linkedin"></i> hoangziet
+                </a>
+                <a href="https://x.com/HoangVietN71441" target="_blank" class="linkedin">
+                    <i class="fa-brands fa-square-x-twitter"></i> Hoang Viet Nguyen
+                </a>
+                <a href="https://www.facebook.com/nghoangziet/" target="_blank" class="linkedin">
+                    <i class="fa-brands fa-square-facebook"></i> Hoang Viet 
+                </a>
+            </div>
+            <div class="fun-fact">
+                <h3></h3>
+                <div class="fpt-logo-container">
+                    <img src="./assets/images/FPT_Software_logo.svg.png" alt="">
+                    <img src="./assets//images/FPT_Education_logo.svg.png" alt="">
+                </div>
+                <p>Nguyen Hoang Viet</p>
+                <p>Gmail: hoangziet22@gmail.com</p>
+                <p>Tel: +84 708 118 892</p>
+                <p>FPT University Quy Nhon, An Phu Thinh Urban Area, Nhon Binh Ward, Quy Nhon, Binh Dinh</p>
+                <p>FPT Software Quy Nhon. 12 Science Avenue, Quarter 2, Ghenh Rang Ward, Quy Nhon, Binh Dinh.</p>
+            </div>
+        </div>
+        <p class="copyright">Made by Hoang Viet | &copy 2025 </p>
+    </footer>
+</body>
 </html>
